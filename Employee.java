@@ -8,17 +8,16 @@ public class Employee {
         this.employeeId = employeeId;
         this.salary = salary;
     }
+    public double getSalary() {
+        return salary;
+    }
+
 
     public void displayDetails() {
         System.out.println("Employee Name: " + name);
         System.out.println("Employee ID: " + employeeId);
         System.out.println("Salary: $" + salary);
     }
-    public static void main(String[] args) {
-        // Creating an instance of Employee
-        Employee employee = new Employee("Sadhana", 1001, 50000);
-        System.out.println("Employee Details:");
-        employee.displayDetails();
-    }
+    
 }
 
